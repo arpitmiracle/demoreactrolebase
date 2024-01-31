@@ -25,8 +25,8 @@ export const AuthProvider = ({ children }) => {
         if (data.success) {
           setAuth({
             ...auth,
-            user: data.user,
-            role: [data.user.role],
+            user: data.data,
+            role: [data.data.role],
             accessToken: authToken,
           });
         }

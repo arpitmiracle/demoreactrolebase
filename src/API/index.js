@@ -3,7 +3,7 @@ import axios from "axios";
 export const API = axios.create({
   baseURL: process.env.REACT_APP_API_URL
     ? process.env.REACT_APP_API_URL
-    : "https://ab4c-2405-201-200c-701a-381a-389f-1e4b-c873.ngrok-free.app/",
+    : "https://demonode-xw94.onrender.com/",
 });
 
 API.interceptors.request.use(
